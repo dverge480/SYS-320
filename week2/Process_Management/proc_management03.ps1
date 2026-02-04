@@ -1,0 +1,2 @@
+﻿$StoppedServices = Get-Service | Where-Object { $_.Status -eq 'Stopped' } | Sort-Object DisplayName
+$StoppedServices | Select-Object Name, DisplayName, Status | Export-Csv -Path "C:\Users\champuser\SYS-320\week2\Process_Management\stopped_services.csv" 
