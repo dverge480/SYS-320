@@ -30,7 +30,7 @@ while($operation){
 
 
     if($choice -eq 10){
-        Write-Host "See ya later alligator!" | Out-String
+        Write-Host "Exited Prompting Process" | Out-String
         exit
         $operation = $false 
     }
